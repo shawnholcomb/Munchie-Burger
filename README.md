@@ -8,7 +8,7 @@ The Munchie Burger Web App is a full-stack application that allows users create 
 
 # Technologies Used
 
-HTML, CSS, Javacript, Bootstrap, JQuery, Node.js, Express.js, MySQL, ORM and hosted via Heroku
+HTML, CSS, Javacript, Bootstrap, JQuery, Node.js, Express.js, MySQL, ORM, deployed via Heroku
 
 # Deployed Site
 
