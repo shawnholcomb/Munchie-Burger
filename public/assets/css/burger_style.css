@@ -1,0 +1,123 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    background: #f5f5f5;
+}
+
+.fs {
+    min-height: calc(100vh - 140px);
+}
+
+/* Page Topper */
+#header-logo {
+    font-family: 'Oleo Script', cursive;
+    font-size: 80px;
+    color: #f5f5f5;
+    text-shadow: 2px 2px 10px #000;
+}
+
+.jumbotron {
+    background: url(/assets/img/big-cheese.jpg) center no-repeat;
+    background-size: cover;
+}
+
+/* Template Generated Area */
+.burger {
+    margin-bottom: 10px;
+    background: #fff;
+    color: #262626;
+    border: 3px solid #ffa000;
+    border-radius: 10px;
+}
+
+.burger-eaten {
+    min-height: 125px;
+    margin-bottom: 10px;
+    background: #fff;
+    color: #262626;
+    border: 3px solid #262626;
+    border-radius: 10px;
+}
+
+.burger-bg-eaten {
+    min-height: 126px;
+    background: url(/assets/img/burger-eaten-bg.png) right center no-repeat;
+    background-size: 280px;
+    padding: 10px;
+}
+
+.burger-bg {
+    background: url(/assets/img/burger-bg.png) right center no-repeat;
+    background-size: 280px;
+    padding: 10px;
+}
+
+.btn {
+    width: 40%;
+    background: #fff;
+    color:#262626;
+    font-size: 1.2em;
+    border: 1px solid #f5f5f5;
+    border-radius: 50px;
+}
+
+.btn:hover {
+    border:1px solid #ffa000;
+    color: #ffa000;
+}
+
+.btn:hover > .burger-bg {
+    background-size: 300px;
+}
+
+/* Text Area */
+.form-control { 
+    font-size: 28px; 
+}
+
+.md-form label {
+    font-size: 26px;
+}
+
+.md-form label.active {
+    font-size: 14px;
+}
+
+.md-form textarea.md-textarea:focus:not([readonly])+label {
+    color: #262626;
+}
+
+.active-amber-textarea.md-form label.active {
+    color: #ffa000;
+}
+
+.amber-textarea textarea.md-textarea:focus:not([readonly]) {
+    border-bottom: 1px solid #ffa000;
+    box-shadow: 0 1px 0 0 #ffa000;
+}
+
+.amber-textarea.md-form .prefix.active {
+    color: #ffa000;
+}
+
+#submit{
+    width: 25%;
+    margin-bottom: 30px;
+}
+
+/* Footer */
+footer {
+    width: 100%;
+    min-height: 115px;
+    background: #262626;
+    color: #f5f5f5;
+    padding: 25px;
+}
+
+#burg {
+    color: #ffa000;
+}

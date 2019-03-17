@@ -1,0 +1,27 @@
+<div class="row">
+    <div class="col-lg-6 col-md-12">
+        <h2 class="mb-4">My Burger Wishlist:</h2>
+        {{#each burgers}}
+        {{#unless devoured}}
+        <div class="burger">
+            <div class="burger-bg no-gutters">
+                <h3> {{this.id}}. {{burger_name}}</h3>
+                <button class="btn devour" data-id="{{this.id}}">Devour It!</button>
+            </div>
+        </div>
+        {{/unless}}
+        {{/each}}
+    </div>
+    <div class="col-lg-6 col-md-12">
+        <h2 class="mb-4">Devoured:</h2>
+        {{#each burgers}}
+        {{#if devoured}}
+        <div class="burger-eaten">
+            <div class="burger-bg-eaten no-gutters">
+                <h3> {{this.id}}. {{burger_name}}</h3>
+            </div>
+        </div>
+        {{/if}}
+        {{/each}}
+    </div>
+</div>
