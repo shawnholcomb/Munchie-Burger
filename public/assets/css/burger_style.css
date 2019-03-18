@@ -38,7 +38,7 @@ body {
     background: url(/assets/img/burger-bg.png) right center no-repeat;
     background-size: 280px;
     padding: 10px;
-    height: 145px;
+    height: 125px;
 }
 
 .burger-eaten {
@@ -55,7 +55,7 @@ body {
     background: url(/assets/img/burger-eaten-bg.png) right center no-repeat;
     background-size: 280px;
     padding: 10px;
-    height: 145px;
+    height: 125px;
 }
 
 
