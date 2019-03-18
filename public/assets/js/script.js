@@ -17,6 +17,7 @@ $(function () {
 
     $(".devour").on("click", function (event) {
         var id = $(this).data("id");
+
         $.ajax("/" + id, {
             type: "PUT",
             data: id
@@ -25,5 +26,5 @@ $(function () {
                 location.reload();
             }
         );
-    });
+    })
 });

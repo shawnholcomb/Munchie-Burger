@@ -34,6 +34,13 @@ body {
     border-radius: 10px;
 }
 
+.burger-bg {
+    background: url(/assets/img/burger-bg.png) right center no-repeat;
+    background-size: 280px;
+    padding: 10px;
+    height: 145px;
+}
+
 .burger-eaten {
     min-height: 125px;
     margin-bottom: 10px;
@@ -48,12 +55,7 @@ body {
     background: url(/assets/img/burger-eaten-bg.png) right center no-repeat;
     background-size: 280px;
     padding: 10px;
-}
-
-.burger-bg {
-    background: url(/assets/img/burger-bg.png) right center no-repeat;
-    background-size: 280px;
-    padding: 10px;
+    height: 145px;
 }
 
 .btn {
@@ -72,41 +74,6 @@ body {
 
 .btn:hover > .burger-bg {
     background-size: 300px;
-}
-
-/* Text Area */
-.form-control { 
-    font-size: 28px; 
-}
-
-.md-form label {
-    font-size: 26px;
-}
-
-.md-form label.active {
-    font-size: 14px;
-}
-
-.md-form textarea.md-textarea:focus:not([readonly])+label {
-    color: #262626;
-}
-
-.active-amber-textarea.md-form label.active {
-    color: #ffa000;
-}
-
-.amber-textarea textarea.md-textarea:focus:not([readonly]) {
-    border-bottom: 1px solid #ffa000;
-    box-shadow: 0 1px 0 0 #ffa000;
-}
-
-.amber-textarea.md-form .prefix.active {
-    color: #ffa000;
-}
-
-#submit{
-    width: 25%;
-    margin-bottom: 30px;
 }
 
 /* Footer */
