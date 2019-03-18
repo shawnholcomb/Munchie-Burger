@@ -5,7 +5,7 @@
         {{#unless devoured}}
         <div class="burger">
             <div class="burger-bg no-gutters">
-                <h3> {{this.id}}. {{burger_name}}</h3>
+                <h3>{{burger_name}}</h3>
                 <button class="btn devour" data-id="{{this.id}}">Devour It!</button>
             </div>
         </div>
@@ -18,7 +18,7 @@
         {{#if devoured}}
         <div class="burger-eaten">
             <div class="burger-bg-eaten no-gutters">
-                <h3> {{this.id}}. {{burger_name}}</h3>
+                <h3>{{burger_name}}</h3>
             </div>
         </div>
         {{/if}}
