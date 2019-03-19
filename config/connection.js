@@ -1,23 +1,20 @@
 var mysql = require("mysql");
+var connection;
 
 // Server for ClearDB database
-var connection = mysql.createConnection({
-  host: "us-cdbr-iron-east-03.cleardb.net",
-  user: "b86d6c5651e4e7",
-  password: "83ed091a",
-  database: "heroku_d2a6fa44d49ff75"
-});
+if (process.env.JAWSDB_URL) {
+  connection.mysql.createConnection(process.env.JAWSDB_URL);
+} else {
+  connection = mysql.createConnection({
+    host: "localhost",
+    port: 3306,
+    user: "root",
+    password: "Ft041104",
+    database: "burgers_db"
+  });
+};
 
-// Server for localhost testing
-// var connection = mysql.createConnection({
-//   host: "localhost",
-//   port: 3306,
-//   user: "root",
-//   password: "Ft041104",
-//   database: "burgers_db"
-// });
-
-connection.connect(function(err) {
+connection.connect(function (err) {
   if (err) {
     console.error("error connecting: " + err.stack);
     return;
