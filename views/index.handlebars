@@ -9,7 +9,23 @@
             <div class="burger-bg no-gutters button-div">
                 <h3>{{burger_name}}</h3>
                 <button class="btn devour" id="burger{{this.id}}" data-id="{{this.id}}">Devour It!</button>
+                <div class="stars-div" id="stars{{this.id}}">
+                    <h4>How would you rate it?</h4>
+                    <fieldset class="rating">
+                        <input type="radio" class="star-select" id="star5" name="rating" value="5" /><label class="full"
+                            for="star5" title="Awesome - 5 stars"></label>
+                        <input type="radio" class="star-select" id="star4" name="rating" value="4" /><label class="full"
+                            for="star4" title="Pretty good - 4 stars"></label>
+                        <input type="radio" class="star-select" id="star3" name="rating" value="3" /><label class="full"
+                            for="star3" title="Okay - 3 stars"></label>
+                        <input type="radio" class="star-select" id="star2" name="rating" value="2" /><label class="full"
+                            for="star2" title="Bad - 2 stars"></label>
+                        <input type="radio" class="star-select" id="star1" name="rating" value="1" /><label class="full"
+                            for="star1" title="Terrible - 1 star"></label>
+                    </fieldset>
+                </div>
             </div>
+
         </div>
 
         {{/unless}}
@@ -23,9 +39,17 @@
         {{#each burgers}}
         {{#if devoured}}
 
-        <div class="burger-eaten">
+        <div class="burger-eaten" data-name={{burger_name}}>
             <div class="burger-bg-eaten no-gutters">
                 <h3>{{burger_name}}</h3>
+                <div class="results-div">
+                    <h4>Rating:</h4>
+                    <div class="devoured">
+                        <fieldset class="rating rate-star" id={{burger_name}} value={{this.rating}}>
+                          {{!-- <h1>{{rating}}</h1> --}}
+                        </fieldset>
+                    </div>
+                </div>
             </div>
         </div>
 

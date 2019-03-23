@@ -19,9 +19,9 @@ var orm = {
             cb(result);
         });
     },
-    updateOne: function (condition, cb) {
-        // console.log(condition);
-        var query = "UPDATE burgers SET devoured = true WHERE " + condition + ";";
+    updateOne: function (rating, condition, cb) {
+        var query = "UPDATE burgers SET devoured = true, rating = " + rating + " WHERE " + condition + ";";
+        console.log(query);
         connection.query(query, function (err, result) {
             if (err) {
                 throw err;

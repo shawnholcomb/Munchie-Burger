@@ -38,7 +38,7 @@ body {
     background: url(/assets/img/burger-bg.png) right center no-repeat;
     background-size: 280px;
     padding: 10px;
-    height: 125px;
+    height: 140px; 
 }
 
 .burger-eaten {
@@ -55,7 +55,7 @@ body {
     background: url(/assets/img/burger-eaten-bg.png) right center no-repeat;
     background-size: 280px;
     padding: 10px;
-    height: 125px;
+    height: 140px;
 }
 
 
@@ -75,6 +75,85 @@ body {
 
 .btn:hover > .burger-bg {
     background-size: 300px;
+}
+
+.devour {
+    margin-top: 15px;
+}
+
+/* Rating Section */
+/****** Style Star Rating Widget *****/
+.stars-div {
+    padding: 10px;
+    display: none;
+}
+
+.rating { 
+    border: none;
+    float: left;
+}
+
+.rating > input {
+    display: none; 
+}
+
+.rating > label:before { 
+    margin: 5px;
+    font-size: 2em;
+    font-family: FontAwesome;
+    content: "\f005";
+}
+
+.rating > label { 
+    color: #ddd; 
+    float: right; 
+}
+
+.rate-star > label {
+    color: #ffa000;      
+}
+
+/***** CSS Magic to Highlight Stars on Hover *****/
+
+.rating > input:checked ~ label, /* show gold star when clicked */
+.rating:not(:checked) > label:hover, /* hover current star */
+.rating:not(:checked) > label:hover ~ label {
+    color: #ffa000;  
+} 
+
+/* Text Area */
+.form-control { 
+    font-size: 28px; 
+}
+
+.md-form label {
+    font-size: 26px;
+}
+
+.md-form label.active {
+    font-size: 14px;
+}
+
+.md-form textarea.md-textarea:focus:not([readonly])+label {
+    color: #262626;
+}
+
+.active-amber-textarea.md-form label.active {
+    color: #ffa000;
+}
+
+.amber-textarea textarea.md-textarea:focus:not([readonly]) {
+    border-bottom: 1px solid #ffa000;
+    box-shadow: 0 1px 0 0 #ffa000;
+}
+
+.amber-textarea.md-form .prefix.active {
+    color: #ffa000;
+}
+
+#submit{
+    width: 25%;
+    margin-bottom: 30px;
 }
 
 /* Text Area */

@@ -18,9 +18,10 @@ router.post("/", function (req, res) {
     })
 });
 
-router.put("/:id", function (req, res) {
+router.put("/:rating/:id", function (req, res) {
+    var rating = req.params.rating;
     var condition = "id = " + req.params.id;
-    burger.updateOne(condition, function (result) {
+    burger.updateOne(rating, condition, function (result) {
         if (result.changedRows == 0) {
             return res.status(404).end();
         } else {
